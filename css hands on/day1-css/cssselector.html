@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css basic</title>
+    <style>
+        /* universal selector */
+        *{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            border: 2px solid black;
+
+        }
+        .late{
+            background-color: rgb(168, 245, 187);
+            height: 30px;
+            width: 80px;
+            border-radius: 8px;
+        }
+        #class{
+             width:70%;
+             color: red;
+             
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    
+    <br><br>
+    <table>
+        <tr align="center">
+            <th colspan="6" >Time Table</th>
+        </tr>
+        <tr align="center">
+            <td rowspan="6" >Hours</td>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thu</td>
+            <td>Fri</td>
+        </tr>
+        <tr align="center">
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr align="center">
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr align="center"><td colspan="5">LUNCH</td></tr>
+        <tr align="center">
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr align="center">
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+    </table>
+    <h1 id="class">click here to create a table</h1>
+    <button class="late">Create</button>
+    
+</body>
+</html>

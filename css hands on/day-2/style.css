@@ -1,0 +1,71 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+.idlogin{
+    background-color: antiquewhite;
+    width: 500px;
+    border-radius:20px;
+    height: 250px;
+
+}
+.idlogin:hover{
+    box-shadow: 20px 20px 10px grey;
+    width:505px;
+    height: 255px;
+    transition: 0.5s;
+}
+.idlogin button{
+    height: 30px;
+    background-color: aquamarine;
+    border:1px solid;
+    border-radius: 10px;
+}
+.idlogin button:hover{
+    background-color: rgb(157, 247, 157);
+    box-shadow: 5px 5px 5px gray;
+}
+.idregister{
+    background-color: antiquewhite;
+    width: 600px;
+    border-radius:20px;
+    height: 650px;
+
+}
+.idregister:hover{
+    box-shadow: 20px 20px 10px grey;
+    width:605px;
+    height: 655px;
+    transition: 0.5s;
+}
+.idregister button{
+    height: 30px;
+    background-color: aquamarine;
+    border:1px solid;
+    border-radius: 10px;
+}
+.idregister button:hover{
+    background-color: rgb(154, 255, 154);
+    box-shadow: 5px 5px 5px gray;
+}
+
+
+/* typesofcss code style */
+#div1{
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    rotate: 45deg;
+}

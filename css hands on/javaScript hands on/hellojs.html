@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js
+    </title>
+    <script>
+        function a(){
+             document.write("hello java jajjaj")
+        }
+        function addition(a,b){
+            let sum=a+b;
+            document.getElementById("hel").innerHTML=sum;
+        }
+        function sub(a,b){
+            let sub=a-b;
+            document.getElementById("sub").innerHTML=sub;
+        }
+        function mul(a,b){
+            let sub=a*b;
+            document.getElementById("mul").innerHTML=sub;
+        }
+        function div(a,b){
+            let sub=a*b;
+            document.getElementById("div").innerHTML=sub;
+        }
+    </script>
+
+</head>
+<body>
+    <button type="button" onclick="a()">click me</button>
+    <button type="button" onclick="addition(10,20)">click</button>
+    <button type="button" onclick="sub(10,20)">click</button>
+    <p onclick="mul(5,5)">click to multiply</p>
+    <p onclick="div(10,5)">divide</p>
+    <p id="hel"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+    <p id="div"></p>
+</body>
+</html>

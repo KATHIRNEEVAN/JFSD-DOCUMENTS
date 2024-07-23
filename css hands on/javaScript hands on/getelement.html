@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function func(){
+            var a=parseInt(document.getElementById("m1").value);
+            var b=parseInt(document.getElementById("m2").value);
+            var op=document.getElementById("m3").value;
+            var res;
+            if(op=="add"){
+                res=(a+b);
+            }
+            if(op=="sub")
+              res=(a-b);
+            if(op=="mul")
+              res=(a*b);
+            if(op=="div")
+              res=(a/b);
+
+              document.getElementById("result").innerHTML=res;
+        }
+    </script>
+</head>
+<body>
+    enter first number: <input type="number" id="m1">
+    <br>
+    enter second number: <input type="number" id="m2">
+    <br>
+     select operation:<select name="" id="m3">
+        <option value="add">addition</option>
+        <option value="sub">subraction</option>
+        <option value="mul">multiply</option>
+        <option value="div">division</option>
+    </select>
+    <br>
+    <button onclick="func()">calculate</button>
+    <br>
+    <br>
+    
+    <div id="result"></div>
+</body>
+</html>

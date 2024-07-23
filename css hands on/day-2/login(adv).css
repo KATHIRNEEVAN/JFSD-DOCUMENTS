@@ -1,0 +1,64 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+.opac{
+    background-color:rgba(10, 10, 10, 0.6);
+    width: 40vw;
+    border-radius:20px;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.idlogin{
+    width: 50vw;
+    border-radius:20px;
+    height: 50vh;
+
+}
+.idlogin button{
+    height: 30px;
+    background-color: rgb(45, 218, 83);
+    border:1px solid;
+    width:100%;
+    border-radius: 10px;
+}
+.idlogin button:hover{
+    background-color: rgb(109, 200, 236);
+}
+
+.outer{
+    height:65vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/loginback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input{
+    border:none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    width:100%;
+
+}
+input::placeholder{
+    color: aliceblue;
+}
+.idlogin img{
+    border-radius: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    
+}

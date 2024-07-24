@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrowfunc</title>
+</head>
+<body>
+    <script>
+        const sum=(x,y)=> x+y;
+        document.write("<br> Addition : "+sum(34,234));
+        const sub=(x,y)=> x-y;
+        document.write("<br> Subraction : "+sub(34,234));
+        const mul=(x,y)=> x*y;
+        document.write("<br> Multiplication : "+mul(34,234));
+        const div=(x,y)=> x/y;
+        document.write("<br> Division : "+div(344,234));
+        const max=(x,y)=> {
+            if(x>y){
+                return x;
+            }
+            else{
+                return y;
+            }
+            
+        };
+        document.write("<br> max : "+max(344,234));
+        const fact =(n)=>{
+        var x=n;
+       var sum=1;
+       for(let i=1; i<=x; i++){
+        sum *= i;
+       }
+       return sum;
+        };
+        document.write("<br>  Factoraial : "+fact(6));
+    </script>
+</body>
+</html>

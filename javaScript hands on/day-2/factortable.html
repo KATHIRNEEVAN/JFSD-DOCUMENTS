@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       const fact=()=>{
+       var x=parseInt(document.getElementById("m1").value);
+       let res="<table border='1' width='50%'>";
+       res+="<tr><th>number</th><th>Factorial</th></tr>";
+       
+       for(let j=1;j<=x;j++){
+        let sum=1;
+       for(let i=1; i<=j; i++){
+        sum *= i;
+        
+       }
+       res+="<tr><td>"+j+"</td><td>"+sum+"</td></tr>";
+      }
+      res+="</table>"
+      document.getElementById("resul").innerHTML=res;
+    }
+    </script>
+</head>
+<body>
+    enter a number for factorial: <input type="number" id="m1">
+    <button onclick="fact()">calc</button>
+    <br>
+    <div id="resul"></div>
+</body>
+</html>

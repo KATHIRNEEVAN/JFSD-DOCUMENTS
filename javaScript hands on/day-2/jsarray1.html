@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaarray</title>
+    <script>
+        function arrayfunc(){
+          let list1=["c","c++","java"];
+          document.write(list1);
+          document.write("<br>"+list1[0]);
+          document.write("<br>"+list1.length);
+          document.write("<br>"+list1[list1.length-1]);
+          list1.push("python");
+          document.write("<br>"+list1);
+          list1.pop();
+          document.write("<br>"+list1);
+          for(let i=0;i<list1.length;i++){
+            document.write("<br>",list1[i])
+          }
+
+        }
+    </script>
+</head>
+<body onload="arrayfunc()">
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calc(){
+       var x=(document.getElementById("m1").value);
+       var res=x.split("");
+       var res=res.reverse();
+       var res=res.join('');
+       if(res==x){
+        document.getElementById("resul").innerHTML=x+"is a Palindrome";
+       }
+       else{
+        document.getElementById("resul").innerHTML=x+": is Not a Palindrome";
+       }
+       
+       
+}
+
+      
+    </script>
+</head>
+<body>
+    enter the string: <input type="text" id="m1">
+    <button onclick="calc()">calc</button>
+    <br>
+    <div id="resul" style="width:400px; height: 400px; background-color: aqua; margin-top: 100px;"></div>
+</body>
+</html>

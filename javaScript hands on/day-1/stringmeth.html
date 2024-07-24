@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            display: flex;
+            width:max-content;
+           /* flex-direction:row; */
+            /* justify-content: space-around; */
+            flex-wrap: wrap;
+        }
+    </style>
+    <script>
+        function calc(){
+       var x=(document.getElementById("m1").value);
+       var len=x.length;
+       document.getElementById("result1").innerHTML=len;
+       let sample="hello";
+       sample=sample.charAt(0);
+       document.getElementById("result2").innerHTML="example of charAt(): "+sample;
+       let text="JavaScript";
+       text=text.slice(4,10);
+       document.getElementById("result3").innerHTML="example of slice(): "+text;
+       let text1="JavaScript";
+       text1=text1.substring(1,10);
+       document.getElementById("result4").innerHTML="example of substring(): "+text1;
+       let text2="JavaScript";
+       text2=text2.substr(3,10);
+       document.getElementById("result5").innerHTML="example of substr(): "+text2;
+       document.getElementById("result6").innerHTML="example of toUpperCase(): "+text.toUpperCase();
+       document.getElementById("result7").innerHTML="example of toLowerCase(): "+text.toLowerCase();
+       let stext="hi";
+       let xtext="hello";
+       let final=stext.concat(" ",xtext);
+       document.getElementById("result8").innerHTML="example of concat(): "+final;
+       let name="    dead     ";
+       document.getElementById("result9").innerHTML="example of trim(): "+name.trim();
+       document.getElementById("result10").innerHTML="example of trimStart(): "+name.trimStart();
+       document.getElementById("result11").innerHTML="example of trimEnd(): "+name.trimEnd();
+       document.getElementById("result12").innerHTML="example of repeat(): "+text.repeat(2);
+       let newtext="hello javascript is bad";
+       newtext=newtext.replace(/bad/i,"good");
+       document.getElementById("result13").innerHTML="example of replace(): "+newtext;
+       let newtext1="hello bad bro javascript is bad";
+       newtext1=newtext1.replaceAll(/bad/g,"good");
+       document.getElementById("result14").innerHTML="example of replaceAll(): "+newtext1;
+       let bb="useraccount";
+       bb=bb.split("");
+       document.getElementById("result15").innerHTML="example of split(): "+bb;
+       let bb1=bb.join();
+       document.getElementById("result16").innerHTML="example of join(): "+bb1;
+
+
+
+
+
+
+    }
+
+      
+    </script>
+</head>
+<body>
+    enter the string: <input type="text" id="m1">
+    <button onclick="calc()">calc</button>
+    <br>
+    <div id="main">
+    <div id="result1" style="width:100px; height: 100px; background-color: aqua; margin-top: 100px;"></div>
+    <div id="result2" style="width:100px; height: 100px; background-color: rgb(214, 219, 219); margin-top: 100px;"></div>
+    <div id="result3" style="width:100px; height: 100px; background-color: rgb(163, 230, 157); margin-top: 100px;"></div>
+    <div id="result4" style="width:100px; height: 100px; background-color: rgb(221, 155, 210); margin-top: 100px;"></div>
+    <div id="result5" style="width:100px; height: 100px; background-color: rgb(221, 121, 176); margin-top: 100px;"></div>
+    <div id="result6" style="width:100px; height: 100px; background-color: rgb(245, 243, 151); margin-top: 100px;"></div>
+    <div id="result7" style="width:100px; height: 100px; background-color: rgb(245, 165, 151); margin-top: 100px;"></div>
+    <div id="result8" style="width:100px; height: 100px; background-color: rgb(151, 245, 187); margin-top: 100px;"></div>
+    <div id="result9" style="width:100px; height: 100px; background-color: rgb(196, 193, 188); margin-top: 100px;"></div>
+    <div id="result10" style="width:100px; height: 100px; background-color: rgb(155, 149, 238); margin-top: 100px;"></div>
+    <div id="result11" style="width:100px; height: 100px; background-color: rgb(245, 212, 151); margin-top: 100px;"></div>
+    <div id="result12" style="width:100px; height: 100px; background-color: rgb(162, 238, 196); margin-top: 100px;"></div>
+    <div id="result13" style="width:100px; height: 100px; background-color: rgb(196, 187, 172); margin-top: 100px;"></div>
+    <div id="result14" style="width:100px; height: 100px; background-color: rgb(215, 151, 245); margin-top: 100px;"></div>
+    <div id="result15" style="width:100px; height: 100px; background-color: rgb(245, 151, 156); margin-top: 100px;"></div>
+    <div id="result16" style="width:100px; height: 100px; background-color: rgb(245, 212, 151); margin-top: 100px;"></div>
+
+</div></body>
+</html>

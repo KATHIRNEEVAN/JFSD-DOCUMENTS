@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <script>
+        function func1(){
+            this.placeholder=''
+            m1.style.background="red";
+        }
+        function calc(){
+       var x=parseInt(document.getElementById("m1").value);
+       var sum=1;
+       for(let i=1; i<=x; i++){
+        sum *= i;
+       }
+
+
+      document.getElementById("resul").innerHTML="Factorial of "+x+" :"+sum;}
+    </script>
+</head>
+<body>
+    Enter a number:<br><input type="number" placeholder="Enter a Number" onblur="calc()" id="m1" onfocus="func1()" >
+    <div id="resul"></div>
+</body>
+</html>

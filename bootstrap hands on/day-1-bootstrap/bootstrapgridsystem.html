@@ -12,38 +12,29 @@
                 font-family: 'Courier New', Courier, monospace;
                 
             }
-            #cont1{
-                height: 100px;
-                background-color: aqua;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 10px;
-                margin-top: 5%;
-                border: 3px solid rgb(5, 177, 245);
-            }
-            #cont1 h1{
-                font-weight: bolder;
-            }
-            #row{
-                display: flex;
-            }
-            #col{
-               border: 3px solid;
-            }
+        
         </style>
 </head>
 <body>
-    <div class="container-fluid" style="background-color: rgb(184, 198, 211);height:100vh;">
+    <br>
         <div class="container">
-    <div class="container"id="cont1">
-        <h1>This is a Column</h1>
+    <div  class="row ">
+        <div class="col-sm-12"><div class="alert alert-info">This is a Column</div></div>
     </div>
-    <div class="row" id="row">
-      <div class="col" id="col"><h3>This my First Column</h3></div>
-      <div class="col" id="col"><h3>This my Second Column</h3></div>
+    <div class="row ">
+      <div class="col-sm-6">
+        <div class="alert alert-danger">This my First Column</div>
     </div>
-</div>
+      <div class="col-sm-6 ">
+        <div class="alert alert-danger">This my Second Column</div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3" ><div class="alert alert-success"> First column</div></div>
+        <div class="col-sm-3" ><div class="alert alert-success"> Second column</div></div>
+        <div class="col-sm-3"><div class="alert alert-success"> third column</div></div>
+        <div class="col-sm-3"><div class="alert alert-success"> Fourth column</div></div>
+      </div>
 </div>
 </body>
 </html>

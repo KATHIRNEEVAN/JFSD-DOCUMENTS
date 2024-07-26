@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            *{
+                font-family: 'Courier New', Courier, monospace;
+                
+            }
+            #cont1{
+                height: 100px;
+                background-color: aqua;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                margin-top: 5%;
+                border: 3px solid rgb(5, 177, 245);
+            }
+            #cont1 h1{
+                font-weight: bolder;
+            }
+            #row{
+                display: flex;
+            }
+            #col{
+               border: 3px solid;
+            }
+        </style>
+</head>
+<body>
+    <div class="container-fluid" style="background-color: rgb(184, 198, 211);height:100vh;">
+        <div class="container">
+    <div class="container"id="cont1">
+        <h1>This is a Column</h1>
+    </div>
+    <div class="row" id="row">
+      <div class="col" id="col"><h3>This my First Column</h3></div>
+      <div class="col" id="col"><h3>This my Second Column</h3></div>
+    </div>
+</div>
+</div>
+</body>
+</html>

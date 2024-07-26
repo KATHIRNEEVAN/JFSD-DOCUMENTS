@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown Toggle</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        
+        <style>
+            *{
+                font-family: 'Courier New', Courier, monospace;
+            }
+            #divmain{
+                margin: 10%;
+            }
+            #id{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            #id1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #id1 a{
+                text-decoration: none;
+                font-size: normal;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        </style>
+</head>
+<body>
+    <div class="dropdown" id="divmain">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Tutorials <span class="caret"></span></button>
+        <div class="dropdown-menu">
+            <div class="dropdown-item" id="id"><h4>Database</h4></div>
+            <div class="divider"></div>
+            <div class="dropdown-item" id="id1"><a href="#"> MySQL</a></div>
+            <div class="dropdown-item" id="id1"><a href="#"> Sql Server</a></div>
+            <div class="dropdown-item" id="id1"><a href="#"> SQL Lite</a></div>
+            <div class="divider"></div>
+            <div class="dropdown-item" id="id"><h4>Programming</h4></div>
+            <div class="divider"></div>
+            <div class="dropdown-item" id="id1"><a href="#"> Java</a></div>
+            <div class="dropdown-item" id="id1"><a href="#"> Python</a></div>
+            <div class="dropdown-item" id="id1"><a href="#"> C++</a></div>
+            
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

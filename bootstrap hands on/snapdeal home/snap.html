@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snapdeal Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        *{
+            font-family: "Lucida Console", "Courier New", monospace;
+           
+        }
+        #topdiv{
+            background-color: rgb(198,2,61);
+            height: 30px;
+            display: flex;
+            align-self: end;
+            
+            
+        }
+        #sectopdiv{
+            background-color: rgb(254,35,65);
+            height: 55px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: -webkit-sticky;
+            position: sticky;        }
+        #logo{
+            height: 55px;
+            margin-left: 120px;
+        }
+        #search{
+            display: flex;
+            margin-left:5%;
+        }
+        #search input{
+            width: 30vw;
+            border:none;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+        #search button{
+            height:32px;
+            border: none;
+            width:10vw;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            background-color: rgb(51,51,51);
+            color: aliceblue;
+
+        }
+        #search button:hover{
+                 background-color: rgb(78, 65, 65);
+        }
+        #cart{
+            margin-left: 7%;
+            color: white;
+            width: 10vw;
+            display: flex;
+            flex-direction: row;
+
+        }
+        #cart button{
+            background-color: rgb(254,35,65);
+            border: none;
+        }
+        #signin{
+            color: white;
+            display: flex;
+            flex-direction: row;
+
+        }
+        #signin button{
+            background-color: rgb(254,35,65);
+            border: none;
+        }
+        #links{
+            color: white;
+            width: 50vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #sidenav{
+            display: flex;
+            flex-direction: column;
+            padding: 0%;
+            justify-content: center;
+            width: 10%;
+            box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            
+            margin-top:30px;
+            margin-left: 6%;
+        }
+        #sidenav a{
+           text-decoration: none;
+           
+
+        }
+        #sidenav h5{
+            width: 200px;
+           height: 30px;
+           display: flex;
+           align-items: center;
+        }
+        #sidenav img{
+            height: 40px;
+            width: 35px;
+            border-radius: 100%;
+        }
+        #menu{
+            display: flex;
+            border-left: 2px solid white;
+            border-bottom: 2px solid white;
+            border-top: 2px solid white;
+        }
+        #menu:hover{
+            border-left: 2px solid rgb(198,2,61);
+            background-color: rgb(246, 249, 250);
+            border-bottom: 2px solid rgb(202, 201, 201);
+            border-top: 2px solid rgb(202, 201, 201);
+            
+        }
+        #ik{
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div id="topdiv" class="container-fluid">
+        <div style="display: flex;height: 40px;">
+        <div id="links">
+            <p>Brand Waali Quality, Bazaar Waali Deal!</p>
+        </div>
+        <div id="links">
+                <p> Impact@Snapdeal </p>
+                <p> Help Center </p>
+                <p> Sell On Snapdeal </p>
+                <p> Download App </p>
+                <p> Donate for elderly </p>
+        </div>
+    </div>
+
+    </div>
+    <div id="sectopdiv" class="container-fluid">
+        <div >
+            <img src="Snapdeal_logo.png" alt="log_png" id="logo">
+        </div>
+        <div id="search">
+            <input type="search" placeholder="     Search products and brands" />
+            <button type="button" ><i class="bi bi-search" style="color: aliceblue;"></i> Search</button>
+          </div>
+          <div id="cart">
+            <button><h4>Cart <i class="bi bi-cart" style="color: black;"></i></h4></button>
+          </div>
+          <div id="signin">
+            <button><h4>Sign in <i class="bi bi-person-circle" style="color: black;"></i></h4></button>
+          </div>
+        </div>
+         <div id="bodypart">
+        <div id="sidenav">
+            <div style="display: flex; flex-direction:column;margin-left: 10px;">
+             <div><h4>Top Categories</h4></div>
+             <div id="menu"><img src="https://n1.sdlcdn.com/imgs/k/v/x/Men_sitenavigation-b972a.jpg" alt=""><h5 style="margin-left: 10px;"><a href="">Men's Fashion</a></h5></div>
+             <div id="menu"><img src="https://n1.sdlcdn.com/imgs/k/v/x/WoMen_sitenav-5a8ca.jpg" alt=""><h5 style="margin-left: 10px;"><a href=""> Women's Fashion</a></h5></div>
+             <div id="menu"><img src="https://n1.sdlcdn.com/imgs/k/v/x/HOme_sitenavigation-d7a00.jpg" alt=""><h5 style="margin-left: 10px;"><a href=""> Home & Kitchen</a></h5></div>
+             <div id="menu"><img src="https://n4.sdlcdn.com/imgs/k/v/x/Toys_Sitenavigation-ef666.jpg" alt=""><h5 style="margin-left: 10px;"><a href=""> Toys,Kid's Fashion </a></h5></div>
+             <div id="menu"><img src="https://n2.sdlcdn.com/imgs/k/v/x/Beauty_Site_navigation-5f3be.jpg" alt=""><h5 style="margin-left: 10px;"><a href=""> Beauty,Health Daily</a></h5></div>
+            </div>
+            <div style="display: flex; flex-direction:column;margin-left: 10px;">
+                <div><h4>More Categories</h4></div>
+               <div id="menu"><h5 style="margin-left: 10px;"><a href="">Automotives</a></h5></div>
+                <div id="menu"><h5 style="margin-left: 10px;"><a href="">Mobile & Accessories</a></h5></div>
+                <div id="menu"><h5 style="margin-left: 10px;"><a href="">Electronics</a></h5></div>
+                <div id="menu"><h5 style="margin-left: 10px;"><a href="">Sports, Fitness & Outdoor</a></h5></div>
+                <div id="menu"><h5 style="margin-left: 10px;"><a href="">Computers & Gaming</a></h5></div>
+                <div id="menu"><h5 style="margin-left: 10px;"><a href="">Books, Media & Music</a></h5></div>
+                <div id="menu"><h5 style="margin-left: 10px;"><a href="">Hobbies</a></h5></div>
+                <div style="display: flex; flex-direction:column;margin-left: 10px;">
+                    <div><h4>Trending Searches</h4></div>
+                   <div id="ik"><h5><a href=""><i class="bi bi-search" style="color: rgb(42, 43, 43);"></i> kitchen product</a></h5></div>
+                    <div id="ik"><h5><a href=""><i class="bi bi-search" style="color: rgb(42, 43, 43);"></i> shoes for men</a></h5></div>
+                    <div id="ik"><h5><a href=""><i class="bi bi-search" style="color: rgb(42, 43, 43);"></i> kurti set</a></h5></div>
+                    <div id="ik"><h5><a href=""><i class="bi bi-search" style="color: rgb(42, 43, 43);"></i> sandal men</a></h5></div>
+                    <div id="ik"><h5><a href=""><i class="bi bi-search" style="color: rgb(42, 43, 43);"></i> sport shoe men</a></h5></div>
+                    
+            </div></div>
+        </div>
+        
+    
+
+
+
+
+    </div>
+</body>
+</html>

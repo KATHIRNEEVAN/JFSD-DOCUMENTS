@@ -1,0 +1,44 @@
+<h1>interpolation example</h1>
+<br>
+<!-- <app-child></app-child> -->
+ <b>
+  My Name :{{name}}
+  <br>
+  My Age : {{age}}
+  <br>
+  Email: <input type="text" value="{{email}}">
+  <br>
+ Addition:{{getaddition(10,20)}}
+ </b>
+ <br>
+ <h1>proprty binding example</h1>
+ <br>
+ <font color="{{textcolor}}">
+ <b>
+  My Name : <input type="text" [value]="name">
+  <br>
+  My Age : <input type="text" [value]="age">
+  <br>
+  Email: <input type="text" [value]="email">
+  <br>
+ Addition:<input type="text" [value]="getaddition(10,20)">
+ </b>
+</font>
+<br>
+ <h1>Event binding example</h1>
+ <br>
+ <font color="{{textcolor}}">
+ <b>
+  My Name : <input type="text" [value]="name">
+  <br>
+  My Age : <input type="text" [value]="age">
+  <br>
+  Email: <input type="text" [value]="email">
+  <br>
+ Addition:<input type="text" [value]="getaddition(10,20)">
+ <br>
+ <img [src]="imgpath" alt="" width="200px" height="200px">
+ <br>
+ <button type="button" (click)="clickfun()">click</button>
+ </b>
+</font>

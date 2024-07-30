@@ -1,0 +1,37 @@
+#heading{
+    display:flex;
+    justify-content: center;
+    height: 15vh;
+    width: 100vw;
+    background-color: aquamarine;
+    align-items: center;
+    margin: 0px;
+    font-weight: 900;
+    background-image:url("imgs/headback.jpg");
+   background-repeat: no-repeat;
+     background-size: cover;
+    
+}
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4vw;
+}
+#bodydiv{
+    display: flex;
+    flex-direction: row;
+
+}
+#input{
+     height: 85vh;
+     width: 55vw;
+     border: 1px solid;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgb(189, 248, 134);
+}
+#display{
+    height: 85vh;
+    width:45vw;
+    border: 1px solid;
+}

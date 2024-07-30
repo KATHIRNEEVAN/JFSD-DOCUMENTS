@@ -1,6 +1,5 @@
-<h1>interpolation example</h1>
+<!-- <h1>interpolation example</h1>
 <br>
-<!-- <app-child></app-child> -->
  <b>
   My Name :{{name}}
   <br>
@@ -45,4 +44,35 @@
  <h1>two way data binding</h1>
  <label for="">Enter your first name<input type="text" [(ngModel)]="fname"></label>
  <h1>Welcome: {{fname}}</h1>
-</font>
+</font> -->
+
+ <br><br><br>
+ <h1>Angular Directives</h1>
+ <h1>ngIf</h1>
+ <h1>ngFor</h1>
+ <h1>ngSwitch</h1>
+ <button (click)="changeflag()">show text</button>
+ <div *ngIf="flag" [ngStyle]="mystyle">
+ <img src="https://th.bing.com/th/id/OIP.fI6jkw5kEXmh3bIrBno7rwHaHa?w=161&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+ <button (click)="changecolor()">change color</button>
+ <div [ngClass]="myclass">
+  <ul>
+    <li *ngFor="let i of vehicles" (click)="selecteditem(i)">{{i}}</li>
+  </ul>
+ </div>
+ <h1>selected vehicle: {{selectvec}}</h1>
+ <ul [ngSwitch]="selectvec">
+  <li *ngSwitchCase="'bikes'">hero honda</li>
+  <li *ngSwitchCase="'auto'">toyoto</li>
+  <li *ngSwitchCase="'car bmw'">bmw</li>
+  <li *ngSwitchCase="'truck'">eicher</li>
+  <li *ngSwitchDefault>Invalid</li>
+
+  
+ </ul>
+ </div>
+ 
+ 
+
+ 
+

@@ -1,0 +1,23 @@
+#inputdiv{
+    width: 35vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 1vw;
+    background-color: azure;
+}
+#inputdiv:hover{
+     box-shadow: 2px 2px 4px 4px grey;
+}
+#inputdiv table{
+    width: 30vw;
+    height: 45vh;
+}
+#inputdiv input{
+    width: 15vw;
+    height: 3vh;
+}

@@ -162,6 +162,7 @@
         #carouselExampleControls{
             width: 81%;
             border-radius: 3px;
+            z-index: -1;
         }
         #sidebox{
             width:17%;
@@ -175,6 +176,7 @@
             flex-direction: column;
             overflow: auto;
             text-align: center;
+           
         }
         #sidebox input{
             width: 80%;
@@ -245,7 +247,7 @@
         }
         #xyz{
             width: 50vh;
-            height: 40vw;
+            height: 30vw;
             background-color: rgb(243, 243, 243);
             border-radius: 5px;
             position: absolute;
@@ -257,10 +259,28 @@
             display: block;
             z-index: 1;
         }
+        #xyz1{
+            width: 50vh;
+            height: 19vw;
+            background-color: rgb(243, 243, 243);
+            border-radius: 5px;
+            position: absolute;
+            left:17%;
+            z-index: -1;
+            display: none;
+        }
+        #menu:hover>#xyz1{
+            display: block;
+            z-index: 1;
+        }
         #next:hover{
              rotate: 45deg;
              opacity: 0.2;
              transition: 2s;
+        }
+        #long{
+            display: flex;
+            flex-direction: column;
         }
     </style>
 </head>
@@ -295,25 +315,26 @@
             <button><h6 style="color: rgb(248, 247, 247);">Sign in <i class="bi bi-person-circle" style="color: rgb(247, 244, 244);"></i></h6></button>
           </div>
         </div>
+        <div id="long">
          <div id="bodypart">
         <div id="sidenav">
             <div style="display: flex; flex-direction:column;margin-left: 10px;">
                 <div><h5>Top Categories</h5></div>
                 <div id="menu"><span><img src="https://n1.sdlcdn.com/imgs/k/v/x/Men_sitenavigation-b972a.jpg" alt=""></span><h6 style="margin-left: 10px;"><a href="">Men's Fashion</a></h6> <div id="xyz"><button class="btn btn-primary">submit</button></div></div>
-                <div id="menu"><span><img src="https://n1.sdlcdn.com/imgs/k/v/x/WoMen_sitenav-5a8ca.jpg" alt=""></span><h6 style="margin-left: 10px;"><a href=""> Women's Fashion</a></h6></div>
-                <div id="menu"><span><img src="https://n1.sdlcdn.com/imgs/k/v/x/HOme_sitenavigation-d7a00.jpg" alt=""></span><h6 style="margin-left: 10px;"><a href=""> Home & Kitchen</a></h6></div>
-                <div id="menu"><span><img src="https://n4.sdlcdn.com/imgs/k/v/x/Toys_Sitenavigation-ef666.jpg" alt=""></span><h6 style="margin-left: 10px;"><a href=""> Toys,Kid's Fashion </a></h6></div>
-                <div id="menu"><span><img src="https://n2.sdlcdn.com/imgs/k/v/x/Beauty_Site_navigation-5f3be.jpg" alt=""></span><h6 style="margin-left: 10px;"><a href=""> Beauty,Health Daily</a></h6></div>
+                <div id="menu"><span><img src="https://n1.sdlcdn.com/imgs/k/v/x/WoMen_sitenav-5a8ca.jpg" alt=""></span><h6 style="margin-left: 10px;"><a href=""> Women's Fashion</a></h6><div id="xyz"><button class="btn btn-primary">submit</button></div></div>
+                <div id="menu"><span><img src="https://n1.sdlcdn.com/imgs/k/v/x/HOme_sitenavigation-d7a00.jpg" alt=""></span><h6 style="margin-left: 10px;"><a href=""> Home & Kitchen</a></h6><div id="xyz"><button class="btn btn-primary">submit</button></div></div>
+                <div id="menu"><span><img src="https://n4.sdlcdn.com/imgs/k/v/x/Toys_Sitenavigation-ef666.jpg" alt=""></span><h6 style="margin-left: 10px;"><a href=""> Toys,Kid's Fashion </a></h6><div id="xyz"><button class="btn btn-primary">submit</button></div></div>
+                <div id="menu"><span><img src="https://n2.sdlcdn.com/imgs/k/v/x/Beauty_Site_navigation-5f3be.jpg" alt=""></span><h6 style="margin-left: 10px;"><a href=""> Beauty,Health Daily</a></h6><div id="xyz"><button class="btn btn-primary">submit</button></div></div>
                </div>
                <div style="display: flex; flex-direction:column;margin-left: 10px;">
                 <div><h5>More Categories</h5></div>
-               <div id="menu"><h6 style="margin-left: 10px;"><a href="">Automotives</a></h6></div>
-                <div id="menu"><h6 style="margin-left: 10px;"><a href="">Mobile & Accessories</a></h6></div>
-                <div id="menu"><h6 style="margin-left: 10px;"><a href="">Electronics</a></h6></div>
-                <div id="menu"><h6 style="margin-left: 10px;"><a href="">Sports, Fitness & Outdoor</a></h6></div>
-                <div id="menu"><h6 style="margin-left: 10px;"><a href="">Computers & Gaming</a></h6></div>
-                <div id="menu"><h6 style="margin-left: 10px;"><a href="">Books, Media & Music</a></h6></div>
-                <div id="menu"><h6 style="margin-left: 10px;"><a href="">Hobbies</a></h6></div>
+               <div id="menu"><h6 style="margin-left: 10px;"><a href="">Automotives</a></h6><div id="xyz1"><button class="btn btn-primary">submit</button></div></div>
+                <div id="menu"><h6 style="margin-left: 10px;"><a href="">Mobile & Accessories</a></h6><div id="xyz1"><button class="btn btn-primary">submit</button></div></div>
+                <div id="menu"><h6 style="margin-left: 10px;"><a href="">Electronics</a></h6><div id="xyz1"><button class="btn btn-primary">submit</button></div></div>
+                <div id="menu"><h6 style="margin-left: 10px;"><a href="">Sports, Fitness & Outdoor</a></h6><div id="xyz1"><button class="btn btn-primary">submit</button></div></div>
+                <div id="menu"><h6 style="margin-left: 10px;"><a href="">Computers & Gaming</a></h6><div id="xyz1"><button class="btn btn-primary">submit</button></div></div>
+                <div id="menu"><h6 style="margin-left: 10px;"><a href="">Books, Media & Music</a></h6><div id="xyz1"><button class="btn btn-primary">submit</button></div></div>
+                <div id="menu"><h6 style="margin-left: 10px;"><a href="">Hobbies</a></h6><div id="xyz1"><button class="btn btn-primary">submit</button></div></div>
                 <div style="display: flex; flex-direction:column;margin-left: 10px;">
                     <div><h5>Trending Searches</h5></div>
                    <div id="ik"><h6><a href=""><i class="bi bi-search" style="color: rgb(42, 43, 43);"></i> kitchen product</a></h6></div>
@@ -443,10 +464,16 @@
              </div>
            <div style="display: flex; width: 90%; align-items: center;"><h6><strike>Rs 399</strike> Rs 144</h6> <h6><span>64% OFF</span></h6></div>
         </div>
+        
     </div>
+    
 </div>
 
     </div>
+    <br><br><br>
+    <div>
+        <img src="down.png" alt="">
+    </div></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

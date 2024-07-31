@@ -1,0 +1,13 @@
+table{
+    width: 100%;
+    border: 2px solid;
+
+}
+table th{
+    border: 2px solid;
+    background-color: skyblue;
+}
+table td{
+    border: 2px solid;
+    
+}

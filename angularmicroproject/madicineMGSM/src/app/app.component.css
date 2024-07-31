@@ -10,11 +10,12 @@
     background-image:url("imgs/headback.jpg");
    background-repeat: no-repeat;
      background-size: cover;
+     font-size: 4vw;
+     
     
 }
 *{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 4vw;
 }
 #bodydiv{
     display: flex;
@@ -34,4 +35,5 @@
     height: 85vh;
     width:45vw;
     border: 1px solid;
+
 }

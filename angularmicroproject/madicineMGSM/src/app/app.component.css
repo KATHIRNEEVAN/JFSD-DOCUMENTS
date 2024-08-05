@@ -1,39 +1,59 @@
-#heading{
-    display:flex;
-    justify-content: center;
-    height: 15vh;
-    width: 100vw;
-    background-color: aquamarine;
+#inputdiv{
+    width:45vw;
+    height: 80vh;
+    display: flex;
     align-items: center;
-    margin: 0px;
-    font-weight: 900;
-    background-image:url("imgs/headback.jpg");
-   background-repeat: no-repeat;
-     background-size: cover;
-     font-size: 4vw;
-     
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-weight: bolder;
+    background-color: azure;
+}
+#inputdiv:hover{
+     box-shadow: 2px 2px 4px 4px grey;
+}
+#inputdiv table{
+    width: 40vw;
+    height: 75vh;
+}
+#inputdiv input{
+    width: 24vw;
+    height: 4vh;
+}
+#disp{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items:center;
+    overflow-y: auto;
+    margin-top: 0%;
+}
+#disp table{
+    width: 45vw;
+    border: 2px solid;
+
+}
+#disp table th{
+    border: 2px solid;
+    background-color: skyblue;
+}
+#disp table td{
+    border: 2px solid;
     
 }
-*{
-    font-family: 'Courier New', Courier, monospace;
-}
-#bodydiv{
+#inputdiv1{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
 }
-#input{
-     height: 85vh;
-     width: 55vw;
-     border: 1px solid;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     background-color: rgb(189, 248, 134);
+#inputdiv1{
+    width:47vw;
+    height: 80vh;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: azure;
 }
-#display{
-    height: 85vh;
-    width:45vw;
-    border: 1px solid;
-
+#inputdiv1:hover{
+     box-shadow: 2px 2px 4px 4px grey;
 }

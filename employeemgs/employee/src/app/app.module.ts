@@ -4,22 +4,20 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { MadicineService } from './madicine.service';
+import { EmpserviceService } from './empservice.service';
 
 @NgModule({
   declarations: [
-    AppComponent,
-
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    HttpClientModule
+    FormsModule
   ],
   providers: [
-    MadicineService
+    provideClientHydration(),
+    EmpserviceService
   ],
   bootstrap: [AppComponent]
 })

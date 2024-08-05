@@ -1,4 +1,4 @@
-<!-- <h1>interpolation example</h1>
+<h1>interpolation example</h1>
 <br>
  <b>
   My Name :{{name}}
@@ -44,7 +44,7 @@
  <h1>two way data binding</h1>
  <label for="">Enter your first name<input type="text" [(ngModel)]="fname"></label>
  <h1>Welcome: {{fname}}</h1>
-</font> -->
+</font>
 
  <br><br><br>
  <h1>Angular Directives</h1>
@@ -70,7 +70,28 @@
 
   
  </ul>
+ <br><br>
+ <div>
+  
+    <a routerLink="/home">Home</a>
+    <a routerLink="/contact">contact</a>
+    
+
+</div>
+<br>
+<div>
+  the component will be loaded here
+  <router-outlet></router-outlet>
+</div>
+
+<br>
+<br>
+<h1>Services</h1>
+
+<h1>Addition: {{sum}}</h1>
  </div>
+
+ 
  
  
 

@@ -1,6 +1,6 @@
-<div style="display: flex;flex-direction: column;">
+<div id="body1">
   <div style="width: 100vw; height: 15vh;display: flex;justify-content: center;align-items: center;">
-    <h1 style="display:flex; width:95vw; justify-content: center;align-items: center;background-color: rgb(236, 213, 6);border-radius: 10px;height: 10vh;">
+    <h1 style="display:flex; width:95vw; justify-content: center;align-items: center;background-color: rgb(233, 148, 21);border-radius: 10px;height: 10vh;">
       Medicine DataBase
     </h1>
   </div>
@@ -45,52 +45,38 @@
                   <td colspan="3"><input type="text" name="medprice" #medprice="ngModel" ngModel  class="form-control" required></td>
                  
               </tr>
-              
-         
-          <tr align="center">
-              <td><button class="btn btn-success" (click)="insertmed(medForm.value)">Add</button></td>
-              <td><button class="btn btn-primary" (click)="updateMedicine(medForm.value)">Update</button></td>
-              <td><button class="btn btn-warning" (click)="findMedicine(medForm.value)">Find</button></td>
-              <td><button class="btn btn-info" (click)="findAllMedicine()">Find All</button></td>
-              <td><button class="btn btn-danger" (click)="deleteMedicine(medForm.value)">Delete</button></td>
-          </tr>
-
   </table>
+  <div id="buton">
+    <button class="btn btn-success" (click)="insertmed(medForm.value)" type="reset">Add</button>
+    <button class="btn btn-primary" (click)="updateMedicine(medForm.value)" type="reset">Update</button>
+    <button class="btn btn-warning" (click)="findMedicine(medForm.value)" type="reset">Find</button>
+    <button class="btn btn-info" (click)="findAllMedicine()" type="reset">Find All</button>
+    <button class="btn btn-danger" (click)="deleteMedicine(medForm.value)" type="reset">Delete</button>
+  </div>
   </form>
   </div>
   </div>
   <div  id="inputdiv1">
     <h1>Medicine Details</h1>
-    <div id="disp" *ngIf="flag2">
-        <table>
-            <tr>
-                <th>Id</th>
-                <th>Medicine</th>
-                <th>Manf Date</th>
-                <th>Expiry-Date</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-              <td>{{medicine.id}}</td>
-              <td>{{medicine.MName}}</td>
-              <td>{{medicine.MManDate}}</td>
-              <td>{{medicine.MExpDate}}</td>
-              <td>{{medicine.MQuantity}}</td>
-              <td>{{medicine.Mprice}}</td>
-            </tr>
-        </table>
-        
-    </div>
-    <div id="disp" *ngIf="flag">
+    <div id="disp">
       <table>
-          <tr>
+          <tr align="center">
               <th>Id</th>
               <th>Medicine</th>
               <th>Manf Date</th>
               <th>Expiry-Date</th>
+              <th>Quantity</th>
               <th>Price</th>
           </tr>
-          <tr *ngFor="let medi in medicinearr">
+          <tr *ngFor="let medi of medicinearr">
+            <td *ngIf="flag">{{medi.id}}</td>
+            <td *ngIf="flag">{{medi.MName}}</td>
+            <td *ngIf="flag">{{medi.MManDate}}</td>
+            <td *ngIf="flag">{{medi.MExpDate}}</td>
+            <td *ngIf="flag">{{medi.MQuantity}}</td>
+            <td *ngIf="flag">{{medi.Mprice}}</td>
+          </tr>
+          <tr *ngIf="flag2">
             <td>{{medicine.id}}</td>
             <td>{{medicine.MName}}</td>
             <td>{{medicine.MManDate}}</td>

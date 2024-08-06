@@ -2,19 +2,27 @@
   "Medicine": [
     {
       "id": "1",
-      "MName": "murukku",
-      "MManDate": "2024-08-10",
-      "MExpDate": "2024-08-23",
-      "MQuantity": "5",
-      "Mprice": "00"
+      "MName": "painkiller",
+      "MManDate": "2024-08-02",
+      "MExpDate": "2024-09-06",
+      "MQuantity": "150",
+      "Mprice": "20000"
     },
     {
-      "id": "111",
-      "MName": "ddddd",
-      "MManDate": "2024-08-07",
-      "MExpDate": "2024-08-20",
-      "MQuantity": "12",
-      "Mprice": "2333"
+      "id": "2",
+      "MName": "paracitamol",
+      "MManDate": "2024-04-29",
+      "MExpDate": "2024-08-23",
+      "MQuantity": "50",
+      "Mprice": "10000"
+    },
+    {
+      "id": "3",
+      "MName": "novagene",
+      "MManDate": "2024-07-29",
+      "MExpDate": "2024-09-07",
+      "MQuantity": "20",
+      "Mprice": "5000"
     }
   ]
 }

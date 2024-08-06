@@ -17,16 +17,16 @@ export class MadicineService {
    insertmedicine(info:Medicine){
       this.http.post<Medicine>(this.url,info).subscribe();
       
-      return "added new data successfully";
+      return "Medicine: "+info.MName+" added successfully";
    }
    updateMedicine(info:Medicine){
       this.http.put<Medicine>(this.url+"/"+this.medicine.id,info).subscribe();
-      return "Employee details updated";
+      return "Medicine: "+info.id+" updated successfully";
     }
   
     deleteMedicine(medId:number){
       this.http.delete<Medicine>(this.url+"/"+medId).subscribe();
-      return "Employee details deleted";
+      return "Medicine: "+medId+" Deleted successfully";
     }
     findAllMedicine(){
       this.http.get<Medicine[]>(this.url).subscribe(data => this.medicinearr = data);

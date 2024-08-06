@@ -49,10 +49,10 @@
          
           <tr align="center">
               <td><button class="btn btn-success" (click)="insertmed(medForm.value)">Add</button></td>
-              <td><button class="btn btn-primary">Update</button></td>
-              <td><button class="btn btn-warning">Find</button></td>
-              <td><button class="btn btn-info">Find All</button></td>
-              <td><button class="btn btn-danger">Delete</button></td>
+              <td><button class="btn btn-primary" (click)="updateMedicine(medForm.value)">Update</button></td>
+              <td><button class="btn btn-warning" (click)="findMedicine(medForm.value)">Find</button></td>
+              <td><button class="btn btn-info" (click)="findAllMedicine()">Find All</button></td>
+              <td><button class="btn btn-danger" (click)="deleteMedicine(medForm.value)">Delete</button></td>
           </tr>
 
   </table>
@@ -60,8 +60,28 @@
   </div>
   </div>
   <div  id="inputdiv1">
-    <div id="disp">
-      <h1>Medicine Details</h1>
+    <h1>Medicine Details</h1>
+    <div id="disp" *ngIf="flag2">
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Medicine</th>
+                <th>Manf Date</th>
+                <th>Expiry-Date</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+              <td>{{medicine.id}}</td>
+              <td>{{medicine.MName}}</td>
+              <td>{{medicine.MManDate}}</td>
+              <td>{{medicine.MExpDate}}</td>
+              <td>{{medicine.MQuantity}}</td>
+              <td>{{medicine.Mprice}}</td>
+            </tr>
+        </table>
+        
+    </div>
+    <div id="disp" *ngIf="flag">
       <table>
           <tr>
               <th>Id</th>
@@ -70,12 +90,13 @@
               <th>Expiry-Date</th>
               <th>Price</th>
           </tr>
-          <tr>
-              <td>1</td>
-              <td>Painkiller</td>
-              <td>12/08/2024</td>
-              <td>05/5/2025</td>
-              <td>Rs 70</td>
+          <tr *ngFor="let medi in medicinearr">
+            <td>{{medicine.id}}</td>
+            <td>{{medicine.MName}}</td>
+            <td>{{medicine.MManDate}}</td>
+            <td>{{medicine.MExpDate}}</td>
+            <td>{{medicine.MQuantity}}</td>
+            <td>{{medicine.Mprice}}</td>
           </tr>
       </table>
       

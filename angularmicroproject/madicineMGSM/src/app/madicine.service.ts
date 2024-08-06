@@ -16,6 +16,7 @@ export class MadicineService {
 
    insertmedicine(info:Medicine){
       this.http.post<Medicine>(this.url,info).subscribe();
-      return "added new data successfully"
+      
+      return "added new data successfully";
    }
 }

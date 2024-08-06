@@ -23,13 +23,14 @@ export class AppComponent {
   }
   insertmed(data:any){
     this.medicine.id=data.medId;
-    this.medicine.Name=data.medName;
-    this.medicine.ManDate=data.medManDate;
-    this.medicine.ExpDate=data.medExpDate;
-    this.medicine.Quantity=data.medQuantity;
-    this.medicine.price=data.medprice;
+    this.medicine.MName=data.medName;
+    this.medicine.MManDate=data.medManDate;
+    this.medicine.MExpDate=data.medExpDate;
+    this.medicine.MQuantity=data.medQuantity;
+    this.medicine.Mprice=data.medprice;
 
     this.result=this.med.insertmedicine(this.medicine);
+    alert(this.result);
 
   }
  

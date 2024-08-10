@@ -1,0 +1,12 @@
+java is platform independent programming language because it generates .class file which contains byte code of the program 
+ but like c lang which generates .obj file which is machine code
+
+java engines
+jdk => java development kit
+jvm => java virtual machine
+jit => just in time compiler
+jre => java runtime environment
+
+
+
+in java static method can be runned without any object declaration

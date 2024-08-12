@@ -1,0 +1,24 @@
+package Assignments;
+
+public class Circle {
+    int radius;
+    float pi =  3.14f;
+    Circle(int radius){
+    	this.radius = radius;
+    }
+    void Area() {
+    	float area = pi*(radius*radius);
+    	System.out.println("Area : "+area);
+    }
+    void Circumfrance() {
+    	float circum = 2*(pi*radius);
+    	System.out.println("Circumfrance : "+circum);
+    }
+	public static void main(String[] args) {
+		Circle circle = new Circle(4);
+		circle.Area();
+		circle.Circumfrance();
+
+	}
+
+}

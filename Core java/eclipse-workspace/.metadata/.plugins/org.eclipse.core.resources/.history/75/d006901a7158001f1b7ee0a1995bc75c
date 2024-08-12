@@ -1,0 +1,28 @@
+package com.ksr;
+
+public class ConstOverload {
+
+	ConstOverload(String name) {
+		System.out.println("Welcome "+name);
+	}
+	ConstOverload(int a,int b) {
+		System.out.println("Sum : "+(a+b));
+	}
+	static int fact(int n) {
+		if(n==0) {
+			return 1;
+		}
+		return n*fact(n-1);
+	}
+	ConstOverload(int a) {
+		System.out.println(fact(a));
+	}
+
+	public static void main(String[] args) {
+		ConstOverload obj1 = new ConstOverload("heeloo");
+		ConstOverload obj2 = new ConstOverload(6);
+		ConstOverload obj3 = new ConstOverload(10,20);
+
+	}
+
+}

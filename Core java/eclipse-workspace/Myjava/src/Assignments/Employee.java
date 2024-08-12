@@ -1,0 +1,24 @@
+package Assignments;
+
+public class Employee {
+    String Name;
+    String jobrole;
+    int Salary;
+    Employee(String Name,String jobrole,int Salary){
+    	this.Name = Name;
+    	this.jobrole = jobrole;
+    	this.Salary = Salary;
+    }
+    void Calcsalary(int percent) {
+    	int hike = (this.Salary*percent)/100;
+    	this.Salary += hike; 
+    }
+	public static void main(String[] args) {
+		Employee obj = new Employee("Murugesh","HR",30000);
+		System.out.println(obj.Name+" "+obj.jobrole+" "+obj.Salary);
+		obj.Calcsalary(20);
+		System.out.println(obj.Salary);
+
+	}
+
+}

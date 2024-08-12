@@ -1,0 +1,29 @@
+package com.ksr;
+//Method overloading 
+public class Methodoverloading {
+	static void myMethod(String name) {
+		System.out.println("Welcome "+name);
+	}
+	static void myMethod(int a,int b) {
+		System.out.println("Sum : "+(a+b));
+	}
+	static int fact(int n) {
+		if(n==0) {
+			return 1;
+		}
+		return n*fact(n-1);
+	}
+	static void myMethod(int a) {
+		System.out.println(fact(a));
+	}
+
+	public static void main(String[] args) {
+		Methodoverloading.myMethod("naveen");
+		Methodoverloading.myMethod(10,20);
+		Methodoverloading.myMethod(5);
+		Methodoverloading obj = new Methodoverloading();
+		obj.myMethod(6);
+
+	}
+
+}

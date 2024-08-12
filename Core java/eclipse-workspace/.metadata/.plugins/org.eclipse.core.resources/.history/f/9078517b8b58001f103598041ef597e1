@@ -1,0 +1,27 @@
+package Assignments;
+
+public class Rectangle {
+	int width=0;
+	int height=0;
+	Rectangle(int width,int height){
+		this.width = width;
+		this.height = height;
+	}
+     void Area() {
+    	int area = this.width*this.height;
+    	System.out.println("Area : "+area);
+    	
+    }
+     void Perimeter() {
+     	int perimeter = 2*(this.width)+(this.height);
+     	System.out.println("Perimeter : "+perimeter);
+     	
+     }
+	public static void main(String[] args) {
+		Rectangle rectangle = new Rectangle(10,20);
+		rectangle.Area();
+		rectangle.Perimeter();
+
+	}
+
+}

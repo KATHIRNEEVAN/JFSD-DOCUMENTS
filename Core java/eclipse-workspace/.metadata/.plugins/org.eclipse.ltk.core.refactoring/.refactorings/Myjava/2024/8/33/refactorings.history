@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Overrideclass.java&apos; to &apos;Myjava/src/Assignments&apos;&#x0D;&#x0A;- Original project: &apos;Myjava&apos;&#x0D;&#x0A;- Destination element: &apos;Myjava/src/Assignments&apos;&#x0D;&#x0A;- Original element: &apos;com.ksr.Overrideclass.java&apos;" description="Copy compilation unit" destination="/src&lt;Assignments" element1="/src&lt;com.ksr{Overrideclass.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1723544459779" units="1" version="1.0"/>
+</session>

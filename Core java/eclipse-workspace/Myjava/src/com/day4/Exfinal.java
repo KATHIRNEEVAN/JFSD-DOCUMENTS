@@ -1,0 +1,19 @@
+//package com.day4;
+//class example{
+//	final void exfinal() {
+//		System.out.println("not overide method");
+//		
+//	}
+//}
+//class example2 extends example{
+//	void exfinal() {
+//		System.out.println("override method");
+//	}
+//}
+//public class Exfinal {
+//
+//	public static void main(String[] args) {
+//		
+//	}
+//
+//}

@@ -1,0 +1,28 @@
+package assignment4;
+class Vehicle{
+	void SpeedUp() {
+		System.out.println("the Speed of the vehicle ");
+	}
+}
+class Bike extends Vehicle{
+	void SpeedUp() {
+		System.out.println("max speed of bike is 120 km/ph");
+	}
+}
+class Car extends Vehicle{
+	void SpeedUp() {
+		System.out.println("max speed of car is 280 km/ph");
+	}
+}
+public class VehicleQ2 {
+
+	public static void main(String[] args) {
+		Vehicle vehicle;
+		vehicle = new Bike();
+		vehicle.SpeedUp();
+		vehicle = new Car();
+		vehicle.SpeedUp();
+
+	}
+
+}

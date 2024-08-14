@@ -1,0 +1,30 @@
+package com.ksr;
+// single inheritance
+class vehicle{
+	void noofengine() {
+		System.out.println("i have one vehicle");
+	}
+}
+class Twowheeler1 extends vehicle{
+	void noofwheels() {
+		System.out.println("its a two wheeler ");
+	}
+}
+class bike1 extends Twowheeler1{
+	void brandname(){
+		System.out.println("brand is honda");
+	}
+	
+}
+public class multilevel {
+
+	public static void main(String[] args) {
+		bike1 obj = new bike1();
+		obj.noofengine();
+		obj.noofwheels();
+		obj.brandname();
+		
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.ksr;
+class Twowheeler{
+	void noofwheels() {
+		System.out.println("I have a two wheeler :");
+	}
+}
+class bike extends Twowheeler{
+	void brandname(){
+		System.out.println("brand was honda");
+	}
+	
+}
+public class SingleInherit {
+
+	public static void main(String[] args) {
+		bike obj = new bike();
+		obj.noofwheels();
+		obj.brandname();
+		
+
+	}
+
+}

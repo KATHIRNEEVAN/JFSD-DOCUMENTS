@@ -1,0 +1,26 @@
+package com.day4;
+class Animals{
+	void move() {
+		System.out.println("All animals willl move");
+	}
+	void eat() {
+		System.out.println("All animals eat something");
+	}
+}
+class Cat extends Animals{
+	void move() {
+		System.out.println("cat will move by walking");
+	}
+	void eat() {
+		System.out.println("cat will eat chicken");
+	}
+}
+public class DMDobject {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+

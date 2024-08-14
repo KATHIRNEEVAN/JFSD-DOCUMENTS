@@ -1,0 +1,30 @@
+package com.ksr;
+class example{
+	int a = 10;
+	example(String Name){
+		System.out.println("Welcome "+Name);
+	}
+	void oldmethod() {
+		System.out.println("Super class method");
+	}
+}
+class example2 extends example{
+
+	example2() {
+		super("Naveen");
+	}
+	void method() {
+		System.out.println("integer"+super.a);
+		super.oldmethod();
+	}
+}
+public class Superclass {
+
+	public static void main(String[] args) {
+		example2 obj = new example2();
+		obj.method();
+		
+
+	}
+
+}

@@ -1,0 +1,40 @@
+package com.day4;
+class Animals{
+	void move() {
+		System.out.println("All animals willl move");
+	}
+	void eat() {
+		System.out.println("All animals eat something");
+	}
+}
+class Cat extends Animals{
+	void move() {
+		System.out.println("cat will move by walking");
+	}
+	void eat() {
+		System.out.println("cat will eat chicken");
+	}
+}
+class bird extends Animals{
+	void move() {
+		System.out.println("bird will fly");
+	}
+	void eat() {
+		System.out.println("bird will eat insects");
+	}
+}
+public class DMDobject {
+
+	public static void main(String[] args) {
+		Animals cat;
+		cat = new Cat();
+		cat.move();
+		cat.eat();
+		Animals birds = new bird();
+		birds.move();
+		birds.eat();
+
+	}
+
+}
+
